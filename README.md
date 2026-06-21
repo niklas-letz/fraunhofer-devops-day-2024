@@ -4,10 +4,10 @@ LaTeX Beamer slides from my talk at **Fraunhofer DevOps Day 2024** (August 13, 2
 
 ## About
 
-This talk demonstrates a one-click, on-demand Kubernetes cluster rollout using
-**GitLab CI/CD**, **Terraform**, **Argo CD** and **Rancher**. The architecture
-follows DevOps best practices — infrastructure as code, GitOps for bootstrapping,
-and a fully automated pipeline as a reusable CI/CD component.
+How do you spin up a fully configured Kubernetes cluster with a single click?
+This talk shows a GitLab CI/CD pipeline that provisions Rancher clusters via
+Terraform and bootstraps them with Argo CD — infrastructure as code, GitOps,
+and a reusable CI/CD component in one end-to-end flow.
 
 ## Compile
 
@@ -25,6 +25,9 @@ sudo tlmgr install lipsum
 sudo tlmgr install makecell
 sudo tlmgr install collection-fontsrecommended
 sudo tlmgr install latexmk
+
+# Verify installed packages
+tlmgr list --only-installed
 ```
 
 ### Build
